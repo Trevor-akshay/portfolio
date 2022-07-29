@@ -33,7 +33,7 @@ export const NavBar = () => {
 		<Router>
 			<Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
 				<Container>
-					<Navbar.Brand href="/">
+					<Navbar.Brand href="/portfolio">
 						<img src={logo} alt="Logo" />
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -106,11 +106,12 @@ export const NavBar = () => {
 									<img src={navIcon3} alt="instagram" />
 								</a>
 							</div>
-							<HashLink to="#connect">
+							<a href="https://drive.google.com/u/0/uc?id=1c2mK0RNHwtBy7LponTPOOntRcehwlNq6&export=download" target="_blank"
+									rel="noreferrer">
 								<button className="vvd">
-									<span>Let’s Connect</span>
+									<span>Resume</span>
 								</button>
-							</HashLink>
+							</a>
 						</span>
 					</Navbar.Collapse>
 				</Container>

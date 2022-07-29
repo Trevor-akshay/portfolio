@@ -32,7 +32,11 @@ export const Contact = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-
+		if (formDetails.name === '' || formDetails.email === '' || formDetails.message === '') {
+			setStatus({ success: false, message: 'Please enter form details' });
+			setButtonText('Send');
+			return;
+		}
 		setButtonText('Sending...');
 		emailjs
 			.sendForm(
@@ -122,7 +126,11 @@ export const Contact = () => {
 												<br></br>
 												<br></br>
 
-												{status.message && (
+												{status.message === 'Please enter form details' &&
+													<Alert severity="warning">Please enter form details!</Alert>
+
+												}
+												{status.message && status.message !== 'Please enter form details' && (
 													<Alert
 														Alert
 														severity={
