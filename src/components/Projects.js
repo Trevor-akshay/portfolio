@@ -18,7 +18,7 @@ export const Projects = () => {
 			Improved security by adding JWT tokens for sign-up and refresh token for login.
 			4-Layer architecture system consisting of Controllers, Services, Models, Routes, and Middleware.`,
 			techStack: `Node.js, Express.js, React.js, Bootstrap, MongoDB, RESTful API, CSS3, JSX`,
-			sourceCode: `https://github.com/Trevor-akshay/E-Commerce-app`,
+			sourceCode: `https://github.com/Trevor-akshay/Hotel-Tonight`,
 			imgUrl: hotelBooking,
 		},
 		{
